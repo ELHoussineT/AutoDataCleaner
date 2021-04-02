@@ -1,7 +1,0 @@
-AutoDataCleaner.py
-README.md
-setup.py
-AutoDataCleaner.egg-info/PKG-INFO
-AutoDataCleaner.egg-info/SOURCES.txt
-AutoDataCleaner.egg-info/dependency_links.txt
-AutoDataCleaner.egg-info/top_level.txt
