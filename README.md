@@ -1,10 +1,15 @@
 # AutoDataCleaner
-<img src="https://img.shields.io/badge/Python-3.*.*-success">
-<a href="https://pypi.org/project/AutoDataCleaner/">
-    <img src="https://img.shields.io/badge/PypiBuild-Stable-blue">
-</a>
-<img src="https://img.shields.io/badge/Version-1.0.3-lightgrey">
-
+<p>
+	<a href="https://www.python.org/downloads/">
+		<img src="https://img.shields.io/badge/Python-3.*.*-success" style="display:inline;">
+	</a>
+	<a href="https://pypi.org/project/AutoDataCleaner/">
+		<img src="https://img.shields.io/badge/PypiBuild-Stable-blue">
+	</a>
+	<a href="https://pypi.org/project/AutoDataCleaner/">
+		<img src="https://img.shields.io/badge/Version-1.0.3-lightgrey">
+	</a>
+</p>
 Simple and automatic data cleaning in one line of code! It performs **One Hot Encoding**, **Cleans Dirty/Empty Values**, **Normalizes values** and **Removes unwanted columns** all in one line of code.
 Get your data ready for model training and fitting quickly.
 # Features 
