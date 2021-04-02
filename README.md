@@ -9,8 +9,15 @@ Get your data ready for model training and fitting quickly.
 4. *Delete Unwanted Columns*: drop and remove unwanted columns (usually this will be the 'id' column)
 # Installation 
 `pip install AutoDataCleaner`
-# Quick one line usage: 
- `AutoDataCleaner.clean_me(df, one_hot=True, na_cleaner_mode="mean", normalize=True, remove_columns=[], verbose=True)`
+# Quick One-line Usage: 
+ ```
+    AutoDataCleaner.clean_me(df, 
+                            one_hot=True, 
+                            na_cleaner_mode="mean", 
+                            normalize=True, 
+                            remove_columns=[], 
+                            verbose=True)
+```
 # Example 
 Import statements: 
 ```
