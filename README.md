@@ -1,6 +1,6 @@
-![version](https://img.shields.io/badge/Version-1.0.3-lightgrey)
-![build](https://img.shields.io/badge/PypiBuild-Stable-blue)
-![python-version](https://img.shields.io/badge/Python-3.*.*-success)
+[![version](https://img.shields.io/badge/Version-1.0.3-lightgrey)](https://github.com/sinkingtitanic/AutoDataCleaner)
+[![build](https://img.shields.io/badge/PypiBuild-Stable-blue)](https://pypi.org/project/AutoDataCleaner/)
+[![python-version](https://img.shields.io/badge/Python-3+-success)](https://www.python.org/downloads/)
 
 # AutoDataCleaner
 Simple and automatic data cleaning in one line of code! It performs **One Hot Encoding**, **Cleans Dirty/Empty Values**, **Normalizes values** and **Removes unwanted columns** all in one line of code.
