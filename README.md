@@ -12,20 +12,25 @@ Get your data ready for model training and fitting quickly.
 `pip install AutoDataCleaner`
 # Example 
 Import statements: 
-`import pandas as pd
-import AutoDataCleaner`
+```
+import pandas as pd
+import AutoDataCleaner
+```
 Example Pandas DataFrame to be cleaned: 
-`df = pd.DataFrame([
+```
+df = pd.DataFrame([
                     [1, "Green", 3], 
                     [2, "Blue", 4],
                     [3, "Green", 5], 
                     [4, "Green", None]
-                ], columns=['id', 'color', 'weight'])`
+                ], columns=['id', 'color', 'weight'])
+```
 Call the `AutoDataCleaner.clean_me` to clean _dirty_ DataFrames:
 `AutoDataCleaner.clean_me(df, remove_columns=['id']) # see 'Usage' section for more parameters`
 
 Example output:
-` +++++++++++++++ DATA CLEANING STARTED ++++++++++++++++ 
+```
+ +++++++++++++++ DATA CLEANING STARTED ++++++++++++++++ 
  = AutoDataCleaner: Performing One-Hot encoding... 
  = AutoDataCleaner: Performing None/NA/Empty values cleaning... 
  = AutoDataCleaner: Performing dataset normalization... 
@@ -36,9 +41,11 @@ Example output:
 0 	-1.224745 	0 	1
 1 	0.000000 	1 	0
 2 	1.224745 	0 	1
-3 	0.000000 	0 	1`
+3 	0.000000 	0 	1
+```
 # Usage
-`AutoDataCleaner.clean_me(df, one_hot=True, na_cleaner_mode="mean", normalize=True, remove_columns=[], verbose=True):
+```
+AutoDataCleaner.clean_me(df, one_hot=True, na_cleaner_mode="mean", normalize=True, remove_columns=[], verbose=True):
     """
     clean_me function performs automatic dataset cleaning to Pandas DataFrame as per the settings parameters passed to this function
     
@@ -54,6 +61,7 @@ Example output:
     :param remove_columns: list of columns to remove, this is usually non-related featues such as the ID column 
     :param verbose: print progress in terminal/cmd
     :return: processed and clean Pandas DataFrame 
-    """`
+    """
+```
 # Contribution 
 Please feel free to send me feedback on "ofcourse7878@gmail.com", submit an issue or make a pull request! 

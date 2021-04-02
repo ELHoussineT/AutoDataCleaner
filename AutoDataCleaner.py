@@ -17,7 +17,7 @@ def clean_me(df, one_hot=True, na_cleaner_mode="mean", normalize=True, remove_co
     :param normalize: if True, all non-binray (columns with values 0 or 1 are excluded) columns will be normalized. 
     :param remove_columns: list of columns to remove, this is usually non-related featues such as the ID column 
     :param verbose: print progress in terminal/cmd
-    :return: processed and clean Pandas DataFrame 
+    :return: processed and clean Pandas DataFrame.
     """
     if verbose:
         print(" +++++++++++++++ DATA CLEANING STARTED ++++++++++++++++ ")
