@@ -57,18 +57,18 @@ Example output:
 AutoDataCleaner.clean_me(df, one_hot=True, na_cleaner_mode="mean", normalize=True, remove_columns=[], verbose=True):
 ```
 Parameters & what do they mean:
-`df: input Pandas DataFrame on which the cleaning will be performed 
-`one_hot`: if True, all non-numeric columns will be encoded to one-hot columns 
-`na_cleaner_mode`: what technique to use when dealing with None/NA/Empty values. Modes: 
-                        `False`       : do not consider cleaning na values 
-                        `'remove row'`: removes rows with a cell that has NA value
-                        `'mean'`      : substitues empty NA cells with the mean of that column 
-                        `'mode'`      : substitues empty NA cells with the mode of that column
-                        `'*'`         : substiture empty NA cells with the value passed in 'na_cleaner_mode' 
-`normalize`: if True, all non-binray (columns with values 0 or 1 are excluded) columns will be normalized. 
-`remove_columns`: list of columns to remove, this is usually non-related featues such as the ID column 
-`verbose`: print progress in terminal/cmd
-`returns`: processed and clean Pandas DataFrame 
+`df`: input Pandas DataFrame on which the cleaning will be performed <br />
+`one_hot`: if True, all non-numeric columns will be encoded to one-hot columns <br />
+`na_cleaner_mode`: what technique to use when dealing with None/NA/Empty values. Modes: <br />
+&nbsp;&nbsp;`False`&nbsp;: do not consider cleaning na values <br />
+&nbsp;&nbsp;`'remove row'`: removes rows with a cell that has NA value<br />
+&nbsp;&nbsp;`'mean'`&nbsp;: substitues empty NA cells with the mean of that column <br />
+&nbsp;&nbsp;`'mode'`&nbsp;: substitues empty NA cells with the mode of that column<br />
+&nbsp;&nbsp;`'*'`&nbsp;: substiture empty NA cells with the value passed in 'na_cleaner_mode' <br />
+`normalize`: if True, all non-binray (columns with values 0 or 1 are excluded) columns will be normalized. <br />
+`remove_columns`: list of columns to remove, this is usually non-related featues such as the ID column <br />
+`verbose`: print progress in terminal/cmd<br />
+`returns`: processed and clean Pandas DataFrame <br />
 
 # Prediction 
 In prediction phase, put the examples to be predicted in Pandas DataFrame and run them through `AutoDataCleaner.clean_me` function **with the same parameters you
