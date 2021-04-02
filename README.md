@@ -1,13 +1,13 @@
 # AutoDataCleaner
 <p align="center">
 	<a href="https://www.python.org/downloads/">
-		<img src="https://img.shields.io/badge/Python-3.*.*-success">
+		<img src="https://img.shields.io/badge/Python-3.*.*-success" />
 	</a>
 	<a href="https://pypi.org/project/AutoDataCleaner/">
-		<img src="https://img.shields.io/badge/PypiBuild-Stable-blue">
+		<img src="https://img.shields.io/badge/PypiBuild-Stable-blue" />
 	</a>
 	<a href="https://pypi.org/project/AutoDataCleaner/">
-		<img src="https://img.shields.io/badge/Version-1.0.3-lightgrey">
+		<img src="https://img.shields.io/badge/Version-1.0.3-lightgrey" />
 	</a>
 </p>
 Simple and automatic data cleaning in one line of code! It performs **One Hot Encoding**, **Cleans Dirty/Empty Values**, **Normalizes values** and **Removes unwanted columns** all in one line of code.
