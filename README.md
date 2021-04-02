@@ -7,9 +7,9 @@
 Simple and automatic data cleaning in one line of code! It performs  **one-hot encoding**, **converts columns to numeric dtype**, **cleaning dirty/empty values**, **normalizes values** and **removes unwanted columns** all in one line of code.
 Get your data ready for model training and fitting quickly.
 # Features 
-0. **Uses Pandas DataFrames [So, no need to learn new syntax]**
+0. **Uses Pandas DataFrames** (no need to learn new syntax)
 1. **One-hot encoding**: encodes non-numeric values to one-hot encoding columns 
-2. **Converts columns to numeric dtypes**: converts text numbers to numeric dtypes **see [1] below**
+2. **Converts columns to numeric dtypes**: converts text numbers to numeric dtypes, see [1] below
 3. **Auto detects binary columns**: any column that has two unique values, these values will be replaced with 0 and 1 (e.g.: `['looser', 'winner'] => [0,1]`)
 4. **Normalization**: performs normalization to columns (excludes binary [1/0] columns)
 5. **Cleans Dirty/None/NA/Empty values**: replace None values with mean or mode of a column, delete row that has None cell or substitute None values with pre-defined value
