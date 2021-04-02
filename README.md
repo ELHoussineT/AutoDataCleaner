@@ -1,7 +1,7 @@
 # AutoDataCleaner
-<p>
+<p align="center">
 	<a href="https://www.python.org/downloads/">
-		<img src="https://img.shields.io/badge/Python-3.*.*-success" style="display:inline;">
+		<img src="https://img.shields.io/badge/Python-3.*.*-success">
 	</a>
 	<a href="https://pypi.org/project/AutoDataCleaner/">
 		<img src="https://img.shields.io/badge/PypiBuild-Stable-blue">
