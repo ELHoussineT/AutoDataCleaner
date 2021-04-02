@@ -39,7 +39,7 @@ AutoDataCleaner.clean_me(df, remove_columns=['id']) # see 'Usage' section for mo
 ```
 <br />
 Example output:
-</br>
+<br />
 ```
  +++++++++++++++ DATA CLEANING STARTED ++++++++++++++++ 
  = DataCleaner: Performing One-Hot encoding... 
