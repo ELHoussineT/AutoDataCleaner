@@ -8,8 +8,9 @@ Get your data ready for model training and fitting quickly.
 3. *Cleans Dirty/None/NA/Empty values*: replace None values with mean or mode of a column, delete substitute with pre-defined value
 4. *Delete Unwanted Columns*: drop and remove unwanted columns (usually this will be the 'id' column)
 # Installation 
-## Using pip: 
 `pip install AutoDataCleaner`
+# Quick one line usage: 
+ `AutoDataCleaner.clean_me(df, one_hot=True, na_cleaner_mode="mean", normalize=True, remove_columns=[], verbose=True)`
 # Example 
 Import statements: 
 ```
