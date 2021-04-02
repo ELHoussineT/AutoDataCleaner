@@ -42,18 +42,16 @@ Example output:
 </br>
 ```
  +++++++++++++++ DATA CLEANING STARTED ++++++++++++++++ 
- = AutoDataCleaner: Performing One-Hot encoding... 
- = AutoDataCleaner: Performing None/NA/Empty values cleaning... 
- = AutoDataCleaner: Performing dataset normalization... 
- = AutoDataCleaner: Performing removal of unwanted columns... 
+ = DataCleaner: Performing One-Hot encoding... 
+ = DataCleaner: Performing None/NA/Empty values cleaning... 
+ = DataCleaner: Performing dataset normalization... 
+ = DataCleaner: Performing removal of unwanted columns... 
  +++++++++++++++ DATA CLEANING FINISHED +++++++++++++++ 
-
 	weight 	color_Blue 	color_Green
-0 	-1.224745 	0 	1
-1 	0.000000 	1 	0
-2 	1.224745 	0 	1
-3 	0.000000 	0 	1
-```
+0 	-0.855528 	0 	1
+1 	-0.475293 	1 	0
+2 	-0.095059 	0 	1
+3 	1.425880 	0 	0
 ```
 # Explaining Parameters 
 
