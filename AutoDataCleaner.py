@@ -1,3 +1,4 @@
+__version__ = "1.0.1"
 import pandas as pd
 
 na_cleaner_modes = ["remove row", "mean", "mode"]
