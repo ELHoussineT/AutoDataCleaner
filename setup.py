@@ -12,7 +12,7 @@ setup(
     url='https://github.com/sinkingtitanic/AutoDataCleaner',
     author='Elhoussine Talab',
     author_email='ofcourse7878@gmail.com',
-    description="Python library to simply perform dataset cleaning on structured data stored in a Panda's DataFrame automatically with one line of code; to be used prior to training, e.g.: in data pre-processing phase in a machine learning project.",
+    description="Simple and automatic data cleaning in one line of code! It performs One Hot Encoding, Cleans Dirty/Empty Values, Normalizes values and Removes unwanted columns all in one line of code. Get your data ready for model training and fitting quickly.",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
