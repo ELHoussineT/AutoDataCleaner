@@ -24,24 +24,20 @@ Install from repository directly using `pip install git+git://github.com/sinking
                             verbose=True)
 ```
 # Example 
-Import statements: 
 ```
 import pandas as pd
 import AutoDataCleaner
-```
-Example Pandas DataFrame to be cleaned: 
-```
+
 df = pd.DataFrame([
                     [1, "Green", 3], 
                     [2, "Blue", 4],
                     [3, "Green", 5], 
                     [4, "Green", None]
                 ], columns=['id', 'color', 'weight'])
+
+AutoDataCleaner.clean_me(df, remove_columns=['id']) # see 'Usage' section for more parameters
 ```
-Call the `AutoDataCleaner.clean_me` to clean _dirty_ DataFrames:
-
-```AutoDataCleaner.clean_me(df, remove_columns=['id']) # see 'Usage' section for more parameters```
-
+<br />
 Example output:
 ```
  +++++++++++++++ DATA CLEANING STARTED ++++++++++++++++ 
