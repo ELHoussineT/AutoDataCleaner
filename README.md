@@ -37,9 +37,7 @@ df = pd.DataFrame([
 
 AutoDataCleaner.clean_me(df, remove_columns=['id']) # see 'Usage' section for more parameters
 ```
-<br />
-Example output:
-<br />
+
 ```
  +++++++++++++++ DATA CLEANING STARTED ++++++++++++++++ 
  = DataCleaner: Performing One-Hot encoding... 
