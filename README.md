@@ -15,7 +15,7 @@ Clone repository and run `pip uninstall -e .` inside the repository directory
 ####
 Install from repository directly using `pip install git+git://github.com/sinkingtitanic/AutoDataCleaner.git#egg=AutoDataCleaner`
 # Quick One-line Usage: 
- ```
+```
     AutoDataCleaner.clean_me(df, 
                             one_hot=True, 
                             na_cleaner_mode="mean", 
@@ -54,10 +54,11 @@ Example output:
 2 	1.224745 	0 	1
 3 	0.000000 	0 	1
 ```
+```
 # Explaining Parameters 
-```
-AutoDataCleaner.clean_me(df, one_hot=True, na_cleaner_mode="mean", normalize=True, remove_columns=[], verbose=True):
-```
+
+`AutoDataCleaner.clean_me(df, one_hot=True, na_cleaner_mode="mean", normalize=True, remove_columns=[], verbose=True)`
+
 Parameters & what do they mean:
 * `df`: input Pandas DataFrame on which the cleaning will be performed <br />
 * `one_hot`: if True, all non-numeric columns will be encoded to one-hot columns <br />
