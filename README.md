@@ -2,11 +2,11 @@
 Simple and automatic data cleaning in one line of code! 
 Get your data ready for model training and fitting quickly.
 # Features 
-0. Uses Pandas DataFrames [So, no need to learn new syntax]
-1. One-hot encoding: encodes non-numeric values to one-hot encoding columns 
-2. Normalization: performs normalization to columns (excludes binary [1/0] columns)
-3. Cleans Dirty/None/NA/Empty values: replace None values with mean or mode of a column, delete substitute with pre-defined value
-4. Delete Unwanted Columns: drop and remove unwanted columns (usually this will be the 'id' column)
+0. *Uses Pandas DataFrames [So, no need to learn new syntax]*
+1. *One-hot encoding*: encodes non-numeric values to one-hot encoding columns 
+2. *Normalization*: performs normalization to columns (excludes binary [1/0] columns)
+3. *Cleans Dirty/None/NA/Empty values*: replace None values with mean or mode of a column, delete substitute with pre-defined value
+4. *Delete Unwanted Columns*: drop and remove unwanted columns (usually this will be the 'id' column)
 # Installation 
 ## Using pip: 
 `pip install AutoDataCleaner`
@@ -26,7 +26,8 @@ df = pd.DataFrame([
                 ], columns=['id', 'color', 'weight'])
 ```
 Call the `AutoDataCleaner.clean_me` to clean _dirty_ DataFrames:
-`AutoDataCleaner.clean_me(df, remove_columns=['id']) # see 'Usage' section for more parameters`
+
+```AutoDataCleaner.clean_me(df, remove_columns=['id']) # see 'Usage' section for more parameters```
 
 Example output:
 ```
