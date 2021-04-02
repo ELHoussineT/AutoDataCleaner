@@ -1,5 +1,5 @@
 # AutoDataCleaner
-Simple and automatic data cleaning in one line of code! 
+Simple and automatic data cleaning in one line of code! It performs **One Hot Encoding**, **Cleans Dirty/Empty Values**, **Normalizes values** and **Removes unwanted columns** all in one line of code.
 Get your data ready for model training and fitting quickly.
 # Features 
 0. **Uses Pandas DataFrames [So, no need to learn new syntax]**
@@ -8,7 +8,12 @@ Get your data ready for model training and fitting quickly.
 3. **Cleans Dirty/None/NA/Empty values**: replace None values with mean or mode of a column, delete row that has None cell or substitute None values with pre-defined value
 4. **Delete Unwanted Columns**: drop and remove unwanted columns (usually this will be the 'id' column)
 # Installation 
+#### Using pip
 `pip install AutoDataCleaner`
+#### Cloning repo: 
+Clone repository and run `pip uninstall -e .` inside the repository directory
+####
+Install from repository directly using `pip install git+git://github.com/sinkingtitanic/AutoDataCleaner.git#egg=AutoDataCleaner`
 # Quick One-line Usage: 
  ```
     AutoDataCleaner.clean_me(df, 
@@ -64,7 +69,7 @@ Parameters & what do they mean:
     * `'remove row'`: removes rows with a cell that has NA value<br />
     * `'mean'`: substitues empty NA cells with the mean of that column <br /> 
     * `'mode'`: substitues empty NA cells with the mode of that column<br />
-    * `'*'`: substiture empty NA cells with the value passed in 'na_cleaner_mode' <br />
+    * `'*'`: any other value will substitute empty NA cells with that particular value passed here <br />
 * `normalize`: if True, all non-binray (columns with values 0 or 1 are excluded) columns will be normalized. <br />
 * `remove_columns`: list of columns to remove, this is usually non-related featues such as the ID column <br />
 * `verbose`: print progress in terminal/cmd<br />
