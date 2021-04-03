@@ -337,23 +337,3 @@ def help():
     """
     print(help_text)
 
-if __name__=="__main__": 
-    import pandas as pd
-    import AutoDataCleaner.AutoDataCleaner as adc
-    df = pd.DataFrame([
-        [1, "Male", "white", 3, "2018/11/20"], 
-        [2, "Female", "blue", "4", "2014/01/12"],
-        [3, "Male", "white", 15, "2020/09/02"], 
-        [4, "Male", "blue", "5", "2020/09/02"], 
-        [5, "Male", "green", None, "2020/12/30"]
-        ], columns=['id', 'gender', 'color', 'weight', 'created_on'])
-
-    adc.clean_me(df, 
-        detect_binary=True, 
-        numeric_dtype=True, 
-        one_hot=True, 
-        na_cleaner_mode="mode", 
-        normalize=True, 
-        datetime_columns=["created_on"], 
-        remove_columns=["id"], 
-        verbose=True)
