@@ -36,7 +36,7 @@ Install from repository directly using `pip install git+git://github.com/sinking
             normalize=True, 
             datetime_columns=[], 
             remove_columns=[], 
-            verbose=True):
+            verbose=True)
 ```
 # Example 
 ```
