@@ -3,7 +3,7 @@
 [![version](https://img.shields.io/badge/Version-1.1.0-lightgrey)](https://github.com/sinkingtitanic/AutoDataCleaner)
 [![build](https://img.shields.io/badge/Pypi%20Build-Stable-blue)](https://pypi.org/project/AutoDataCleaner/)
 [![python-version](https://img.shields.io/badge/Python-3^-success)](https://www.python.org/downloads/)
-[![python-version](https://img.shields.io/badge/Coverage-%100-success)](https://pypi.org/project/AutoDataCleaner/)
+[![coverage](https://img.shields.io/badge/Coverage-%100-success)](https://pypi.org/project/AutoDataCleaner/)
 
 ![Preview](https://raw.githubusercontent.com/sinkingtitanic/AutoDataCleaner/main/images/autodatacleaner.png)
 
