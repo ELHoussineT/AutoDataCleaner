@@ -4,6 +4,8 @@
 [![build](https://img.shields.io/badge/PypiBuild-Stable-blue)](https://pypi.org/project/AutoDataCleaner/)
 [![python-version](https://img.shields.io/badge/Python-3+-success)](https://www.python.org/downloads/)
 
+![Preview](https://raw.githubusercontent.com/sinkingtitanic/AutoDataCleaner/main/images/autodatacleaner.png)
+
 Simple and automatic data cleaning in one line of code! It performs  **one-hot encoding**, **converts columns to numeric dtype**, **cleaning dirty/empty values**, **normalizes values** and **removes unwanted columns** all in one line of code.
 Get your data ready for model training and fitting quickly.
 # Features 
