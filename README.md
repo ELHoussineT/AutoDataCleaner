@@ -9,7 +9,7 @@ Get your data ready for model training and fitting quickly.
 # Features 
 0. **Uses Pandas DataFrames** (no need to learn new syntax)
 1. **One-hot encoding**: encodes non-numeric values to one-hot encoding columns 
-2. **Converts columns to numeric dtypes**: converts text numbers to numeric dtypes, see [1] below
+2. **Converts columns to numeric dtypes**: converts text numbers to numeric dtypes **see [1] below**
 3. **Auto detects binary columns**: any column that has two unique values, these values will be replaced with 0 and 1 (e.g.: `['looser', 'winner'] => [0,1]`)
 4. **Normalization**: performs normalization to columns (excludes binary [1/0] columns)
 5. **Cleans Dirty/None/NA/Empty values**: replace None values with mean or mode of a column, delete row that has None cell or substitute None values with pre-defined value
@@ -20,7 +20,7 @@ Get your data ready for model training and fitting quickly.
 `pip install AutoDataCleaner`
 #### Cloning repo: 
 Clone repository and run `pip uninstall -e .` inside the repository directory
-####
+#### Install from repo directly
 Install from repository directly using `pip install git+git://github.com/sinkingtitanic/AutoDataCleaner.git#egg=AutoDataCleaner`
 # Quick One-line Usage: 
 ```
@@ -39,16 +39,23 @@ Install from repository directly using `pip install git+git://github.com/sinking
 ```
 >>> import pandas as pd
 >>> import AutoDataCleaner.AutoDataCleaner as adc
->>> 
 >>> df = pd.DataFrame([
 ...     [1, "Male", "white", 3, "2018/11/20"], 
 ...     [2, "Female", "blue", "4", "2014/01/12"],
-...     [3, "Male", "white", 5, "2020/09/02"], 
+...     [3, "Male", "white", 15, "2020/09/02"], 
 ...     [4, "Male", "blue", "5", "2020/09/02"], 
 ...     [5, "Male", "green", None, "2020/12/30"]
 ...     ], columns=['id', 'gender', 'color', 'weight', 'created_on'])
 >>> 
->>> adc.clean_me(df, datetime_columns=['created_on'], remove_columns=['id']) # see 'Usage' section for more parameters
+>>> adc.clean_me(df, 
+...     detect_binary=True, 
+...     numeric_dtype=True, 
+...     one_hot=True, 
+...     na_cleaner_mode="mode", 
+...     normalize=True, 
+...     datetime_columns=["created_on"], 
+...     remove_columns=["id"], 
+...     verbose=True)
  +++++++++++++++ AUTO DATA CLEANING STARTED ++++++++++++++++ 
  =  AutoDataCleaner: Casting datetime columns to datetime dtype... 
   + converted column created_on to datetime dtype
@@ -67,11 +74,12 @@ Install from repository directly using `pip install git+git://github.com/sinking
   + normalized 5 cells
  +++++++++++++++ AUTO DATA CLEANING FINISHED +++++++++++++++ 
    gender    weight created_on  color_blue  color_green  color_white
-0       1 -1.507557 2018-11-20           0            0            1
-1       0 -0.301511 2014-01-12           1            0            0
-2       1  0.904534 2020-09-02           0            0            1
-3       1  0.904534 2020-09-02           1            0            0
-4       1  0.000000 2020-12-30           0            1            0
+0       1 -0.588348 2018-11-20           0            0            1
+1       0 -0.392232 2014-01-12           1            0            0
+2       1  1.765045 2020-09-02           0            0            1
+3       1 -0.196116 2020-09-02           1            0            0
+4       1 -0.588348 2020-12-30           0            1            0
+
 
 ```
 

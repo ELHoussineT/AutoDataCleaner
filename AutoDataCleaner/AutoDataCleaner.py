@@ -257,7 +257,7 @@ def clean_na_series(series, na_cleaner_mode):
         mean = series.mean()
         return series.fillna(mean)
     elif na_cleaner_mode == 'mode':
-        mode = series.mode()
+        mode = series.mode()[0]
         return series.fillna(mode)
     elif na_cleaner_mode == False: 
         return series
@@ -276,9 +276,14 @@ def clean_na_df(df, na_cleaner_mode, verbose=True):
     """
     stats = {}
     for col in df.columns.to_list(): 
-        if df[col].isna().sum() > 0 and verbose: 
+        if df[col].isna().sum() > 0: 
             stats[col + " NaN Values"] = df[col].isna().sum()
-        df[col] = clean_na_series(df[col], na_cleaner_mode)
+            try:
+                df[col] = clean_na_series(df[col], na_cleaner_mode)
+            except: 
+                pass
+                # print("  + could not find mean for column {}, will use mode instead to fill NaN values".format(col))
+                # df[col] = clean_na_series(df[col], 'mode')
     if verbose: 
         print("  + cleaned the following NaN values: {}".format(stats))
     return df
@@ -333,12 +338,22 @@ def help():
     print(help_text)
 
 if __name__=="__main__": 
+    import pandas as pd
+    import AutoDataCleaner.AutoDataCleaner as adc
     df = pd.DataFrame([
-                    [1, "Male", "white", 3, "2018/11/20"], 
-                    [2, "Female", "blue", "4", "2014/01/12"],
-                    [3, "Male", "white", 5, "2020/09/02"], 
-                    [4, "Male", "blue", "5", "2020/09/02"], 
-                    [5, "Male", "green", None, "2020/12/30"]
-                ], columns=['id', 'gender', 'color', 'weight', 'created_on'])
-    
-    print(clean_me(df, remove_columns=['id'], datetime_columns=['created_on'])) # see 'Usage' section for more parameters
+        [1, "Male", "white", 3, "2018/11/20"], 
+        [2, "Female", "blue", "4", "2014/01/12"],
+        [3, "Male", "white", 15, "2020/09/02"], 
+        [4, "Male", "blue", "5", "2020/09/02"], 
+        [5, "Male", "green", None, "2020/12/30"]
+        ], columns=['id', 'gender', 'color', 'weight', 'created_on'])
+
+    adc.clean_me(df, 
+        detect_binary=True, 
+        numeric_dtype=True, 
+        one_hot=True, 
+        na_cleaner_mode="mode", 
+        normalize=True, 
+        datetime_columns=["created_on"], 
+        remove_columns=["id"], 
+        verbose=True)
