@@ -105,9 +105,6 @@ def clean_me(dataframe,
 
 """ ------------------------------------------------------------------------------------------------------------------------- """
 
-
-import pandas as pd 
-
 def datetime_dtype_series(series, verbose=True):
     """
     datetime_dtype_series function casts date columns to datetime dtype 
