@@ -22,7 +22,7 @@ Get your data ready for model training and fitting quickly.
 #### Using pip
 `pip install AutoDataCleaner`
 #### Cloning repo: 
-Clone repository and run `pip uninstall -e .` inside the repository directory
+Clone repository and run `pip install -e .` inside the repository directory
 #### Install from repo directly
 Install from repository directly using `pip install git+git://github.com/sinkingtitanic/AutoDataCleaner.git#egg=AutoDataCleaner`
 # Quick One-line Usage: 
