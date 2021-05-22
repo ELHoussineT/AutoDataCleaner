@@ -1,6 +1,6 @@
 # AutoDataCleaner
 
-[![version](https://img.shields.io/badge/Version-1.1.0-lightgrey)](https://github.com/sinkingtitanic/AutoDataCleaner)
+[![version](https://img.shields.io/badge/Version-1.1.3-lightgrey)](https://github.com/sinkingtitanic/AutoDataCleaner)
 [![build](https://img.shields.io/badge/Pypi%20Build-Stable-blue)](https://pypi.org/project/AutoDataCleaner/)
 [![python-version](https://img.shields.io/badge/Python-3^-success)](https://www.python.org/downloads/)
 [![coverage](https://img.shields.io/badge/coverage-%25100-success)](https://pypi.org/project/AutoDataCleaner/)
